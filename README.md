@@ -7,7 +7,7 @@ This project explores the evolution of architectures for multiclass semantic seg
 - **Multi-Class Segmentation**: Background, Body, Wheels, Headlights, Windows.
 - **Loss Strategy**: Combination of Focal Loss and Dice Loss (Kornia) with logarithmic class weighting.
 - **Architectures**: Baseline Unet, Deep Unet, Attention Unet, ResNet-34 Unet, MiT-B2 Unet.
-- **Out-of-Distribution Testing**: Robustness testing on real images (Alfa Giulia, Lamborghini Urus, Fiat Panda).
+- **Out-of-Distribution Testing**: Robustness testing on real images (Mercedes, Volkswagen & Tesla).
 
 ## 📊 Performance Highlights
 
@@ -23,9 +23,10 @@ Example of segmentation on images external to the dataset
 
 | **Unet - ResNet 34** | **Unet - Mit-b2** |
 | :-- | :-- |
-| ![Comparison](/infer/unet_resnet34/cover_alfa-giulia.png) | ![Comparison](/infer/unet_mit/cover_alfa-giulia.png) |
-| ![Comparison](/infer/unet_resnet34/cover_lamborghini-urus.png) | ![Comparison](/infer/unet_mit/cover_lamborghini-urus.png) |
-| ![Comparison](/infer/unet_resnet34/cover_pandino-storico.png) | ![Comparison](/infer/unet_mit/cover_pandino-storico.png) |
+| ![Comparison](/images/resnet/cover_cabrio-chiusa.png) | ![Comparison](/images/mit/cover_cabrio-chiusa.png) |
+| ![Comparison](/images/resnet/cover_glc.png) | ![Comparison](/images/mit/cover_glc.png) |
+| ![Comparison](/images/resnet/cover_maggiolino.png) | ![Comparison](/images/mit/cover_maggiolino.png) |
+| ![Comparison](/images/resnet/cover_model3.png) | ![Comparison](/images/mit/cover_model3.png) |
 
 ## 📂 Project Structure
 
@@ -33,7 +34,7 @@ Example of segmentation on images external to the dataset
 - **/dataset**: Data preparation, preprocessing, Data Augmentation, Split and DataLoader
 - **/engine**: Early Stopping Function, Metrics (IoU and Dice Score), Loop train-validate, Plot of graphs
 - **/graph**: Training graphs, Comparison images
-- **/infer**: Images external to the dataset and their results (masks and overlays), divided by model
+- **/images**: Images external to the dataset and their results (masks and overlays), divided by model
 - **/run**: Main scripts
 
 ## 🔚 Conclusions and References
